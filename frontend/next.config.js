@@ -1,7 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: false,
-  // Allow serving large FBX/GLB files from public/
+
+  // 👇 THIS LINE FIXES YOUR BUILD
+  turbopack: {},
+
+  // Keep your custom webpack config
   webpack: (config) => {
     config.module.rules.push({
       test: /\.(glb|gltf|fbx)$/,
