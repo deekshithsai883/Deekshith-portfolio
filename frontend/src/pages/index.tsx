@@ -69,8 +69,12 @@ const NPCS_DATA: NPC[] = [
     {s:'FUTURE DEE', t:"If you've walked this far, you know the story. Hyderabad kid. Coma survivor. JEE 97 percentile. 10,000 sales presentations. 220-person team. Startup founder. GAN researcher. Now game developer."},
     {s:'FUTURE DEE', t:"LinkedIn: linkedin.com/in/kavali-deekshith-1bb84728b\nGitHub: github.com/deekshithsai883\nLocation: Khairatabad, Hyderabad 500004\n\nLet's talk if you're building something real."}
   ]},
+   { id:'placement', name:'RECRUITER', color:0xf0a020, zone:'FUTURE PEAK', pos:[95,0,70], lines:[
+    {s:'RECRUITER', t:"Deekshith was selected and placed at Gowra Bits & Bytes Pvt. Ltd. with a 12 LPA package. The offer came through during his final year at JNTUH Manthani — a strong close to the academic chapter."},
+    {s:'RECRUITER', t:"Data Analyst profile. The foundation he built with SQL, Power BI, Python, and business analysis landed it. Real skills, real outcome."}
+  ]},
   { id:'ainpc', name:'MINNIE · AI', color:0x00e5ff, zone:'AI NEXUS', isAI:true, pos:[58,0,100], lines:[
-    {s:'MINNIE', t:"Hey! I'm Minnie 💙 I know everything about Deekshith  his story, skills, projects, and goals. Ask me anything!"}
+    {s:'MINNIE', t:"Hey! I'm Minnie 💙 I know everything about Deekshith:  his story, skills, projects, and goals. Ask me anything!"}
   ]},
 ];
 
@@ -1019,7 +1023,7 @@ await new Promise<void>(resolve => {
               <span className="btn-icon">▶</span>
               BEGIN JOURNEY
             </button>
-            <div className="title-hint">15 characters · 7 zones · AI companion</div>
+            <div className="title-hint">16 characters · 7 zones · AI companion</div>
           </div>
 
           {/* RIGHT: How to play */}
@@ -1049,7 +1053,7 @@ await new Promise<void>(resolve => {
       {/* HUD */}
       <div id="hud" style={{display:'none'}}>
         <div id="zoneLabel">◈ THE WORLD</div>
-        <div id="foundLabel">0 / 15 found</div>
+        <div id="foundLabel">0 / 16 found</div>
       </div>
       <div id="crosshair" />
 
