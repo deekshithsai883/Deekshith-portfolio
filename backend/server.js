@@ -20,6 +20,7 @@ CAREER & COMPANY:
 - Built + managed 220-person team, managed 200 interns, ran company solo with 0 startup experience
 - Pitched to 30+ investors, couldn't raise due to structural issues — pivoted company
 - Worked as solo full-stack engineer, ML dev, and CEO simultaneously
+- Got placed at Gowra Bits and Bytes with a 12 LPA package as a passed out fresher.
 
 SKILLS: Python, C#, C++, .NET, SQL, Machine Learning, Data Analysis, Power BI, Tableau, Excel, Prompt Engineering, AI/ML, Game Development (pivoting into C#/C++ game dev now)
 
