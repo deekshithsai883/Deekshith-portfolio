@@ -70,7 +70,7 @@ const NPCS_DATA: NPC[] = [
     {s:'FUTURE DEE', t:"LinkedIn: linkedin.com/in/kavali-deekshith-1bb84728b\nGitHub: github.com/deekshithsai883\nLocation: Khairatabad, Hyderabad 500004\n\nLet's talk if you're building something real."}
   ]},
    { id:'placement', name:'RECRUITER', color:0xf0a020, zone:'FUTURE PEAK', pos:[95,0,70], lines:[
-    {s:'RECRUITER', t:"Deekshith was selected and placed at Gowra Bits & Bytes Pvt. Ltd. with a 12 LPA package. The offer came through during his final year at JNTUH Manthani — a strong close to the academic chapter."},
+    {s:'RECRUITER', t:"Deekshith was selected and placed at Gowra Bits & Bytes Pvt. Ltd. with a 12 LPA package. The offer came through during his final year at JNTUH Manthani. It's a strong close to the academic chapter."},
     {s:'RECRUITER', t:"Data Analyst profile. The foundation he built with SQL, Power BI, Python, and business analysis landed it. Real skills, real outcome."}
   ]},
   { id:'ainpc', name:'MINNIE · AI', color:0x00e5ff, zone:'AI NEXUS', isAI:true, pos:[58,0,100], lines:[
