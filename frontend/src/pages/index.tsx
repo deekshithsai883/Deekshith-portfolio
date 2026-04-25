@@ -736,7 +736,24 @@ await new Promise<void>(resolve => {
     const appendMsg=(role:'user'|'assistant',text:string)=>{
       const div=document.createElement('div');
       div.style.cssText=`font-family:'Rajdhani',sans-serif;font-size:16px;font-weight:600;padding:6px 12px;border-radius:4px;max-width:88%;line-height:1.5;${role==='user'?'align-self:flex-end;background:rgba(0,120,220,0.12);color:#1a4080;border-left:2px solid #0080d0;':'align-self:flex-start;background:rgba(255,255,255,0.7);color:#1a3020;border-left:2px solid rgba(0,200,220,0.6);'}`;
-      div.textContent=(role==='user'?'You: ':'MINNIE 💙: ')+text;
+      const prefix = role === 'user' ? 'You: ' : 'MINNIE 💙: ';
+const urlRegex = /(https?:\/\/[^\s]+)/g;
+const parts = text.split(urlRegex);
+div.appendChild(document.createTextNode(prefix));
+parts.forEach(part => {
+  if (urlRegex.test(part)) {
+    const a = document.createElement('a');
+    a.href = part;
+    a.textContent = part;
+    a.target = '_blank';
+    a.rel = 'noopener noreferrer';
+    a.style.cssText = 'color:#0088cc;text-decoration:underline;word-break:break-all;';
+    div.appendChild(a);
+  } else {
+    div.appendChild(document.createTextNode(part));
+  }
+  urlRegex.lastIndex = 0; // reset regex after .test()
+});
       aiHistoryEl.appendChild(div);aiHistoryEl.scrollTop=aiHistoryEl.scrollHeight;
       if(role==='assistant') speakAsMinnie(text);
     };
