@@ -1032,7 +1032,7 @@ parts.forEach(part => {
             <div className="title-divider" />
             <div className="title-desc">
               A 3D world built from a real story.<br />
-              Walk through 7 zones, meet 15 characters,<br />
+              Walk through 7 zones, meet 16 characters,<br />
               and discover what drives him to build.
             </div>
             <div className="title-divider" />
